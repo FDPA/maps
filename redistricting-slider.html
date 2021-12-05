@@ -1,0 +1,42 @@
+<html>
+  <!-- Scripts are loaded in the body to mimic an HTML block in Craft -->
+  <body>
+    <h2>2021 Redistricting</h2>
+    
+    <table><tbody><tr>
+      <td>
+        <strong>County:</strong>
+        <br />
+        <select id="countyDropdown" onchange="displayMaps()"></select>
+      </td>
+      <td>
+        <div id="chamberRadioDiv"></div>
+      </td>
+    </tr></tbody></table>
+    
+    <div class="comparison-slider-wrapper">
+      <div id="ba-slider" class="comparison-slider">
+        <div id="afterLabel" class="overlay"></div>
+        <img id="afterImg" />
+        <div class="resize">
+          <div id="beforeLabel" class="overlay"></div>
+          <img id="beforeImg" />
+        </div>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <script type="text/javascript" src="https://fdpa.github.io/maps/redistricting-slider.js"></script>
+    <script type="text/javascript">initialize();</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link href="https://fdpa.github.io/maps/ba-slider.css" rel="stylesheet" />
+    <script src="https://fdpa.github.io/maps/ba-slider.js"></script>
+    <script>
+      $(document).ready(function () {
+        baSlider("#ba-slider");
+      });
+    </script>
+  </body>
+</html>
