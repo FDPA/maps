@@ -9,7 +9,7 @@ var counties = [
   "Westmoreland", "Wyoming", "York"
 ];
 
-var baseUrl = "images";
+var baseUrl = "https://fdpa.github.io/maps/images";
 
 var dropdown = document.getElementById('countyDropdown');
 var chamberRadios;
