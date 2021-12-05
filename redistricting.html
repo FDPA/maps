@@ -1,0 +1,27 @@
+<html>
+  <!-- Scripts are loaded in the body to mimic an HTML block in Craft -->
+  <body>
+    <h2>2021 Redistricting</h2>
+    
+    <table><tbody><tr>
+      <td>
+        <strong>County:</strong>
+        <br />
+        <select id="countyDropdown" onchange="displayMap()"></select>
+      </td>
+      <td>
+        <div id="chamberRadioDiv"></div>
+      </td>
+      <td>
+        <div id="sourceRadioDiv"></div>
+      </td>
+    </tr></tbody></table>
+    
+    <div><img id="mapImg" /></div>
+
+    <hr>
+
+    <script type="text/javascript" src="redistricting.js"></script>
+    <script type="text/javascript">initialize();</script>
+  </body>
+</html>
