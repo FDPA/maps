@@ -96,8 +96,8 @@ function initialize() {
         "<div id=\"chamberRadioDiv\" style=\"float: left; padding: 0 5px 0 5px; min-width: 25%; margin: 0 10px 0 10px;\"></div>" +
         "<div id=\"sourceRadioDiv\" style=\"float: left; padding: 0 5px 0 5px; min-width: 25%; margin: 0 10px 0 10px;\"></div>" +
     "</div>" +
-    "<div id=\"interactiveMapLink\"></div>" +
-    "<div><img id=\"mapImg\" /></div>";
+    "<div><img id=\"mapImg\" /></div>" +
+    "<div id=\"interactiveMapLink\"></div>";
 
   dropdown = document.getElementById('countyDropdown');
   for (var i = 0; i < counties.length; i++) {
@@ -137,7 +137,7 @@ function initialize() {
 function displayMap() {
   var county = dropdown.value;
   var prettyCounty = county[0].toUpperCase() + county.substring(1);
-  interactiveMapLink.innerHTML = "You can also view an <a href=\"https://www.google.com/maps/d/edit?mid=" + idByCounty[prettyCounty] + "\" target=\"_blank\">interactive map</a> for " + prettyCounty + " County.";
+  interactiveMapLink.innerHTML = "If you'd like to see more detail, try our <a href=\"https://www.google.com/maps/d/edit?mid=" + idByCounty[prettyCounty] + "\" target=\"_blank\">interactive map</a> for " + prettyCounty + " County.";
 
   var chamber = getRadioValue(chamberRadios);
   var source = getRadioValue(sourceRadios);
