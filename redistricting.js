@@ -113,7 +113,7 @@ function initialize() {
     "<span style=\"float: left; width: 100%; background: #e9e9ed; padding: 0 5px 0 10px;\">" +
     "<label style=\"font-weight: normal;\"><input type=\"radio\" name=\"chamberRadio\" value=\"pa_house\" onchange=\"displayMap()\" checked=\"checked\" />House</label>" +
     "<label style=\"font-weight: normal;\"><input type=\"radio\" name=\"chamberRadio\" value=\"pa_senate\" onchange=\"displayMap()\" />Senate</label>" +
-//    "<label><input type=\"radio\" name=\"chamberRadio\" value=\"us_congress\" onchange=\"displayMap()\" />Congress</label>";
+//    "<label><input type=\"radio\" name=\"chamberRadio\" value=\"us_congress\" onchange=\"displayMap()\" />Congress</label>" +
     "</span>";
   chamberRadios = document.getElementsByName('chamberRadio');
 
@@ -121,8 +121,9 @@ function initialize() {
     "<label style=\"color: white;\"> Map Source </label>" +
     "<span style=\"float: left; width: 100%; background: #e9e9ed; padding: 0 5px 0 10px;\">" +
     "<label style=\"font-weight: normal;\"><input type=\"radio\" name=\"sourceRadio\" value=\"current\" onchange=\"displayMap()\" checked=\"checked\" />Current</label>" +
-    "<label style=\"font-weight: normal;\"><input type=\"radio\" name=\"sourceRadio\" value=\"lrc\" onchange=\"displayMap()\" />LRC</label>" +
-    "<label style=\"font-weight: normal;\"><input type=\"radio\" name=\"sourceRadio\" value=\"fdpa\" onchange=\"displayMap()\" />FDPA</label>"
+    "<label style=\"font-weight: normal;\"><input type=\"radio\" name=\"sourceRadio\" value=\"fdpa\" onchange=\"displayMap()\" />FDPA</label>" +
+    "<label style=\"font-weight: normal;\"><input type=\"radio\" name=\"sourceRadio\" value=\"lrc\" onchange=\"displayMap()\" />LRC Preliminary</label>" +
+    "<label style=\"font-weight: normal;\"><input type=\"radio\" name=\"sourceRadio\" value=\"lrc_final\" onchange=\"displayMap()\" />LRC Final</label>" +
     "</span>";
   sourceRadios = document.getElementsByName('sourceRadio');
 
